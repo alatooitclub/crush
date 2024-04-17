@@ -32,10 +32,8 @@ public class ProfileView extends Composite<VerticalLayout> {
         FormLayout formLayout2Col = new FormLayout();
         TextField textField = new TextField();
         TextField textField2 = new TextField();
-        DatePicker datePicker = new DatePicker();
         TextField textField3 = new TextField();
         EmailField emailField = new EmailField();
-        TextField textField4 = new TextField();
         HorizontalLayout layoutRow = new HorizontalLayout();
         Button buttonPrimary = new Button();
         Button buttonSecondary = new Button();
@@ -51,10 +49,9 @@ public class ProfileView extends Composite<VerticalLayout> {
         formLayout2Col.setWidth("100%");
         textField.setLabel("Username");
         textField2.setLabel("FirstName");
-        datePicker.setLabel("Birthday");
         textField3.setLabel("Phone Number");
         emailField.setLabel("Email");
-        textField4.setLabel("Region or country");
+
         layoutRow.addClassName(Gap.MEDIUM);
         layoutRow.setWidth("100%");
         layoutRow.getStyle().set("flex-grow", "1");
@@ -68,10 +65,9 @@ public class ProfileView extends Composite<VerticalLayout> {
         layoutColumn2.add(formLayout2Col);
         formLayout2Col.add(textField);
         formLayout2Col.add(textField2);
-        formLayout2Col.add(datePicker);
+
         formLayout2Col.add(textField3);
         formLayout2Col.add(emailField);
-        formLayout2Col.add(textField4);
         layoutColumn2.add(layoutRow);
         layoutRow.add(buttonPrimary);
         layoutRow.add(buttonSecondary);
