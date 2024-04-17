@@ -91,15 +91,7 @@ public class MainView extends Composite<VerticalLayout> implements HasComponents
         headerContainer.add();
 
         podcastContainer = new OrderedList();
-        podcastContainer.addClassNames(
-                Gap.MEDIUM,
-                LumoUtility.Display.FLEX,
-                LumoUtility.FlexDirection.COLUMN,
-                LumoUtility.AlignItems.START,
-                LumoUtility.ListStyleType.NONE,
-                LumoUtility.Margin.NONE,
-                Padding.MEDIUM
-        );
+        podcastContainer.addClassNames(Gap.MEDIUM, LumoUtility.Display.FLEX, LumoUtility.FlexWrap.WRAP, LumoUtility.ListStyleType.NONE, LumoUtility.Margin.NONE, Padding.NONE);
         container.add(headerContainer);
         add(container, podcastContainer);
     }
